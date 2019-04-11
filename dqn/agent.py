@@ -3,6 +3,7 @@ import os
 import time
 import random
 import numpy as np
+from functools import reduce
 from tqdm import tqdm
 import tensorflow as tf
 
