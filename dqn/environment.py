@@ -32,6 +32,7 @@ class Environment(object):
     return self.screen, 0, 0, self.terminal
 
   def _step(self, action):
+    self.env.reset()
     self._screen, self.reward, self.terminal, _ = self.env.step(action)
 
   def _random_step(self):
