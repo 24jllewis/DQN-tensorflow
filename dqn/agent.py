@@ -6,6 +6,7 @@ import numpy as np
 from functools import reduce
 from tqdm import tqdm
 import tensorflow as tf
+#hello
 
 from .base import BaseModel
 from .history import History
