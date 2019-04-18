@@ -326,6 +326,8 @@ class Agent(BaseModel):
 
     tf.initialize_all_variables().run()
 
+    print(type(self.w.values()))
+    print(type([self.step_op]))
     self._saver = tf.train.Saver(self.w.values() + [self.step_op], max_to_keep=30)
 
     self.load_model()
